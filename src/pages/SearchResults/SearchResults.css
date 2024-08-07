@@ -1,0 +1,76 @@
+/* Core Search Results Styling */
+.search-results-page {
+  background-color: #141414;
+  color: #e5e5e5;
+  min-height: 100vh;
+  font-family: Poppins, sans-serif;
+  padding: 55px;
+}
+
+.search-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.search-result-item {
+  text-decoration: none;
+  color: inherit;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #333;
+  background: transparent;
+  object-fit: fill;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-result-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.search-result-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.search-result-item p {
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-result-item {
+      width: 120px;
+  }
+
+  .search-header h1 {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-result-item {
+      width: 100px;
+  }
+
+  .search-header h1 {
+      font-size: 1.2rem;
+  }
+}

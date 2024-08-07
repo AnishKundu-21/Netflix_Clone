@@ -1,0 +1,31 @@
+.scroll-button {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.scroll-button img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  display: block;
+}
+
+.scroll-button.left {
+  left: 0; /* Adjust position from the left edge */
+}
+
+.scroll-button.right {
+  right: 0; /* Adjust position from the right edge */
+}
+
+.scroll-button:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}

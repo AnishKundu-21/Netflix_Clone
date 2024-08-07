@@ -1,0 +1,118 @@
+/* Home.css */
+
+.home {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .hero {
+    position: relative;
+    height: 80vh;
+    background-color: #000;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    max-width: 600px;
+  }
+  
+  .hero-caption h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero-caption p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .hero-btns {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #f40612;
+  }
+  
+  .movies-section {
+    padding: 20px 30px;
+    position: relative;
+  }
+  
+  .movies-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .movies-row-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .movies-row {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  
+  .movies-row::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
+  .home .movies-section .movies-row .movie-card {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+  }
+  
+  .home .movies-section .movies-row .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    
+  }
+  
+  .home .movies-section .movies-row .movie-card h3 {
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .movies-row-container:hover .scroll-btn {
+    opacity: 1;
+    visibility: visible; /* Make the scroll button visible on hover */
+  }
+  
